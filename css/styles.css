@@ -1,16 +1,62 @@
-body{
-
-    text-align: center; /* display: inline | inline-block */
-
-}
-
-.box{
-    /*display: block;*/
-    margin: auto;
+* {
     box-sizing: border-box;
-    border: 10px solid red;
-    width: 400px;
-    background: orange;
-    height: 300px;
 }
 
+body {
+    --primary-color-light: #926239;
+    --secondary-color-light: white;
+    --primary-color-dark: white;
+    --secondary-color-dark: #926239;
+
+    margin: 0;
+    color: var(--primary-color-light);
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+#banner {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://traversymedia.com/downloads/assets/beachshowcase.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+
+    border: 1px solid transparent;
+    text-align: center;
+    /*    min-height: 300px;
+        max-height: 2000px;*/
+}
+
+#banner h1 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+#banner p {
+    font-size: 20px;
+}
+
+#banner a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 1px solid var(--primary-color-light);
+    border-radius: 6px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: inherit;
+}
+
+footer div {
+    display: inline-block;
+}
+
+#test{
+    background: var(--primary-color-light);
+    color: var(--secondary-color-light);
+}
